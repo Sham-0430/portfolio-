@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Sham Ganesh — frontend developer, data analyst and digital marketer">
+    <title>Sham Ganesh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Sham Ganesh</h1>
+            <p>Frontend Developer · Data Analyst · Digital Marketer</p><a class="button" href="#contact">Get in
+                touch</a>
+        </div>
+    </header>
+    <nav class="nav"><a class="brand" href="#top">SG</a><button class="menu-toggle"
+            aria-label="Toggle navigation">☰</button>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#admin">Admin</a></li>
+        </ul><button id="toggle-theme" class="theme-toggle" type="button">Dark mode</button>
+    </nav>
+    <main class="wrap" id="top">
+        <section id="about" class="panel">
+            <h2>About me</h2>
+            <p>I’m a curious developer building useful web experiences and exploring data-driven problem solving.</p>
+            <div class="chips"><span>HTML & CSS</span><span>JavaScript</span><span>React</span><span>Data
+                    analysis</span></div>
+        </section>
+        <section id="education" class="panel">
+            <h2>Education</h2>
+            <article class="item">
+                <h3>B.E. Computer Science and Engineering</h3>
+                <p>Arunai Engineering College</p><time>2027</time>
+            </article>
+            <article class="item">
+                <h3>High School</h3>
+                <p>Mount St Joseph School</p><time>2021</time>
+            </article>
+        </section>
+        <section id="experience" class="panel">
+            <h2>Work Experience</h2>
+            <p class="muted">Experience details can be added here.</p>
+        </section>
+        <section id="internships" class="panel">
+            <h2>Internships</h2>
+            <article class="item">
+                <h3>Full Stack Java</h3>
+                <p>Pantech Learning and Corporations</p><time>2026</time>
+            </article>
+            <article class="item">
+                <h3>Web Development</h3>
+                <p>Learning Zone</p><time>2026</time>
+            </article>
+        </section>
+        <section id="projects" class="panel">
+            <h2>Projects</h2>
+            <article class="item">
+                <h3>My Portfolio</h3>
+                <p>Personal portfolio website</p>
+            </article>
+            <article class="item">
+                <h3>Student Management System</h3>
+                <p>Pantech Learning and Corporations</p>
+            </article>
+        </section>
+        <section id="hobbies" class="panel">
+            <h2>Hobbies</h2>
+            <p>Singing · Dancing · Badminton · Drawing</p>
+        </section>
+        <section id="contact" class="panel">
+            <h2>Contact me</h2>
+            <form id="contact-form"><label>Name<input name="name" required maxlength="100"></label><label>Email<input
+                        name="email" type="email" required maxlength="200"></label><label>Message<textarea
+                        name="message" required maxlength="5000" rows="5"></textarea></label><button class="button"
+                    type="submit">Send message</button>
+                <p id="form-status" role="status"></p>
+            </form>
+        </section>
+        <section id="admin" class="panel">
+            <h2>Admin</h2>
+            <form id="admin-form"><label>Username<input id="admin-user" required
+                        autocomplete="username"></label><label>Password<input id="admin-password" type="password"
+                        required autocomplete="current-password"></label><button class="button" type="submit">Sign
+                    in</button>
+                <p id="admin-status" role="status"></p>
+            </form>
+            <div id="responses" hidden>
+                <div class="response-heading">
+                    <h3>Contact responses</h3><button id="logout" type="button">Log out</button>
+                </div>
+                <div id="response-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer>© <span id="year"></span> Sham Ganesh</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
